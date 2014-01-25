@@ -1,8 +1,7 @@
 #import <Foundation/Foundation.h>
 
-@interface TestQuery : NSObject {
-    int number;
-}
-@property (assign) int number;
+@interface TestQuery : NSObject
+
+@property (nonatomic,strong) NSDate *date;
 
 @end

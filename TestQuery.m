@@ -2,31 +2,35 @@
 #import "SlimList.h"
 #import "SlimListSerializer.h"
 
-@implementation TestQuery
+@interface TestQuery ()
+@property (nonatomic, strong) NSArray *tableData;
+@end
 
-@synthesize number;
+@implementation TestQuery
 
 -(id) initWithString:(NSString*) givenString {
     if ((self = [super init])) {
-        self.number = [givenString intValue];
+        self.date = [[self tableDateFormatter] dateFromString:givenString];
     }
     return self;
 }
 
--(NSString*) query {
-    NSLog(@"number :%d", self.number);
-    SlimList* list = SlimList_Create();
-    SlimList* subList = SlimList_Create();
-    SlimList* subSubList = SlimList_Create();
-    SlimList_AddString(subSubList, "n");
-    SlimList_AddString(subSubList, "1");
-    SlimList* subSubList2 = SlimList_Create();
-    SlimList_AddString(subSubList2, "2n");
-    SlimList_AddString(subSubList2, "2");
-    SlimList_AddList(subList, subSubList);
-    SlimList_AddList(subList, subSubList2);
-    SlimList_AddList(list, subList);
-    return [NSString stringWithUTF8String: SlimList_Serialize(list)];
+- (NSDateFormatter*)tableDateFormatter {
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"dd-MMM-yyyy"];
+    return df;
+}
+
+- (void)table:(NSArray*)table {
+    self.tableData = table;
+}
+
+-(NSArray*) query {
+    NSMutableDictionary *lastRow = [NSMutableDictionary dictionaryWithDictionary:[self.tableData lastObject]];
+    [lastRow setValue:@"Bradbury" forKey:@"Last Name"];
+    [lastRow setValue:[[self tableDateFormatter] stringFromDate:self.date] forKey:@"Hire Date"];
+    NSArray *results = @[self.tableData[0],self.tableData[1],lastRow];
+    return results;
 }
 
 @end
