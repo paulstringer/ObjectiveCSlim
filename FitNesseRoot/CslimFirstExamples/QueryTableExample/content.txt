@@ -1,0 +1,9 @@
+!contents -R2 -g -p -f -h
+
+[[Query Tables User Guide][http://fitnesse.org/FitNesse.UserGuide.SliM.QueryTable]]
+
+!|Query:TestQuery|10-Dec-1980                     |
+|Employee Number |First Name|Last Name|Hire Date  |
+|1429            |Bob       |Martin   |10-Oct-1975|
+|9924            |Bill      |Mitchell |19-Dec-1966|
+|8876            |Doug      |         |           |
