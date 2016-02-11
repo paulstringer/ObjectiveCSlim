@@ -158,6 +158,16 @@
 		07F1C37115D9B8BE00ECBC7F /* SlimList.c in Sources */ = {isa = PBXBuildFile; fileRef = F8FC52C714AE47A500D714B4 /* SlimList.c */; };
 		8CB8AB001C6CA5A600FF823F /* ValidReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8AAFF1C6CA5A600FF823F /* ValidReturnTypes.swift */; };
 		8CB8AB011C6CA5A600FF823F /* ValidReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8AAFF1C6CA5A600FF823F /* ValidReturnTypes.swift */; };
+		8CB8AB331C6CC95F00FF823F /* ValidReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB8AAFF1C6CA5A600FF823F /* ValidReturnTypes.swift */; };
+		8CB8AB341C6CC98800FF823F /* libswiftObjectiveC.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB091C6CB58D00FF823F /* libswiftObjectiveC.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB351C6CC98800FF823F /* libswiftFoundation.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0A1C6CB58D00FF823F /* libswiftFoundation.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB361C6CC98800FF823F /* libswiftDispatch.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0B1C6CB58D00FF823F /* libswiftDispatch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB371C6CC98800FF823F /* libswiftDarwin.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0C1C6CB58D00FF823F /* libswiftDarwin.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB381C6CC98800FF823F /* libswiftCoreImage.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0D1C6CB58D00FF823F /* libswiftCoreImage.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB391C6CC98800FF823F /* libswiftCoreGraphics.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0E1C6CB58D00FF823F /* libswiftCoreGraphics.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB3A1C6CC98800FF823F /* libswiftCoreData.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB0F1C6CB58D00FF823F /* libswiftCoreData.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB3B1C6CC98800FF823F /* libswiftCore.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB101C6CB58D00FF823F /* libswiftCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8CB8AB3C1C6CC98800FF823F /* libswiftAppKit.dylib in Copy Swift Libraries */ = {isa = PBXBuildFile; fileRef = 8CB8AB111C6CB58D00FF823F /* libswiftAppKit.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CED15DBB346E462F89555F60 /* libPods-mac_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */; };
 		F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = F81ADACA1449CA8600BC821A /* ObjAdderFixture.m */; };
 		F81E7F4F1582AAF6004C029E /* Main.c in Sources */ = {isa = PBXBuildFile; fileRef = F873F3D51448BF4F00FFCA02 /* Main.c */; };
@@ -269,6 +279,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8CB8AB081C6CB4C300FF823F /* Copy Swift Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CB8AB341C6CC98800FF823F /* libswiftObjectiveC.dylib in Copy Swift Libraries */,
+				8CB8AB351C6CC98800FF823F /* libswiftFoundation.dylib in Copy Swift Libraries */,
+				8CB8AB361C6CC98800FF823F /* libswiftDispatch.dylib in Copy Swift Libraries */,
+				8CB8AB371C6CC98800FF823F /* libswiftDarwin.dylib in Copy Swift Libraries */,
+				8CB8AB381C6CC98800FF823F /* libswiftCoreImage.dylib in Copy Swift Libraries */,
+				8CB8AB391C6CC98800FF823F /* libswiftCoreGraphics.dylib in Copy Swift Libraries */,
+				8CB8AB3A1C6CC98800FF823F /* libswiftCoreData.dylib in Copy Swift Libraries */,
+				8CB8AB3B1C6CC98800FF823F /* libswiftCore.dylib in Copy Swift Libraries */,
+				8CB8AB3C1C6CC98800FF823F /* libswiftAppKit.dylib in Copy Swift Libraries */,
+			);
+			name = "Copy Swift Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07080B55182D47AC007234D0 /* iOSSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07080B5B182D47AC007234D0 /* iOSSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSSpecs-Info.plist"; sourceTree = "<group>"; };
@@ -314,9 +346,17 @@
 		07F1C34815D9B77D00ECBC7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecKit-Prefix.pch"; sourceTree = "<group>"; };
 		3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mac_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8CB8AAFD1C6CA5A600FF823F /* MacSpecs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpecs-Bridging-Header.h"; sourceTree = "<group>"; };
-		8CB8AAFE1C6CA5A600FF823F /* iOSSpecs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSSpecs-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CB8AAFD1C6CA5A600FF823F /* ObjectiveCSlim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ObjectiveCSlim-Bridging-Header.h"; path = "../MacSK/ObjectiveCSlim-Bridging-Header.h"; sourceTree = "<group>"; };
 		8CB8AAFF1C6CA5A600FF823F /* ValidReturnTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValidReturnTypes.swift; path = cslim/tests/ObjectiveC/ValidReturnTypes.swift; sourceTree = SOURCE_ROOT; };
+		8CB8AB091C6CB58D00FF823F /* libswiftObjectiveC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftObjectiveC.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftObjectiveC.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0A1C6CB58D00FF823F /* libswiftFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftFoundation.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftFoundation.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0B1C6CB58D00FF823F /* libswiftDispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDispatch.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftDispatch.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0C1C6CB58D00FF823F /* libswiftDarwin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDarwin.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftDarwin.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0D1C6CB58D00FF823F /* libswiftCoreImage.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreImage.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftCoreImage.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0E1C6CB58D00FF823F /* libswiftCoreGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreGraphics.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftCoreGraphics.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB0F1C6CB58D00FF823F /* libswiftCoreData.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreData.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftCoreData.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB101C6CB58D00FF823F /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftCore.dylib; sourceTree = DEVELOPER_DIR; };
+		8CB8AB111C6CB58D00FF823F /* libswiftAppKit.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftAppKit.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/libswiftAppKit.dylib; sourceTree = DEVELOPER_DIR; };
 		A9785FC8F202485F838C7229 /* Pods-ios_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_test.xcconfig"; path = "Pods/Pods-ios_test.xcconfig"; sourceTree = "<group>"; };
 		C861FF339B9545DA930AE737 /* Pods-mac_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mac_test.xcconfig"; path = "Pods/Pods-mac_test.xcconfig"; sourceTree = "<group>"; };
 		E9702D604C36413C856D2042 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -560,8 +600,6 @@
 				07F1C2F515D9B17000ECBC7F /* main.m */,
 				07F1C2F715D9B17000ECBC7F /* Supporting Files */,
 				8CB8AAFF1C6CA5A600FF823F /* ValidReturnTypes.swift */,
-				8CB8AAFD1C6CA5A600FF823F /* MacSpecs-Bridging-Header.h */,
-				8CB8AAFE1C6CA5A600FF823F /* iOSSpecs-Bridging-Header.h */,
 			);
 			name = MacSpecKit;
 			path = MacSK;
@@ -592,6 +630,22 @@
 				07F1C34A15D9B77D00ECBC7F /* iOSSpecKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CB8AB1B1C6CB59400FF823F /* Swift Libs (OS X) */ = {
+			isa = PBXGroup;
+			children = (
+				8CB8AB091C6CB58D00FF823F /* libswiftObjectiveC.dylib */,
+				8CB8AB0A1C6CB58D00FF823F /* libswiftFoundation.dylib */,
+				8CB8AB0B1C6CB58D00FF823F /* libswiftDispatch.dylib */,
+				8CB8AB0C1C6CB58D00FF823F /* libswiftDarwin.dylib */,
+				8CB8AB0D1C6CB58D00FF823F /* libswiftCoreImage.dylib */,
+				8CB8AB0E1C6CB58D00FF823F /* libswiftCoreGraphics.dylib */,
+				8CB8AB0F1C6CB58D00FF823F /* libswiftCoreData.dylib */,
+				8CB8AB101C6CB58D00FF823F /* libswiftCore.dylib */,
+				8CB8AB111C6CB58D00FF823F /* libswiftAppKit.dylib */,
+			);
+			name = "Swift Libs (OS X)";
 			sourceTree = "<group>";
 		};
 		F873F3CF1448BEF300FFCA02 /* Fixtures */ = {
@@ -684,6 +738,7 @@
 				F8A425B4145208CC00FD4ECA /* Foundation.framework */,
 				07F1C2BB15D9A23200ECBC7F /* CoreGraphics.framework */,
 				F8ED9F021448BDF900DCBB3F /* Other Frameworks */,
+				8CB8AB1B1C6CB59400FF823F /* Swift Libs (OS X) */,
 				E9702D604C36413C856D2042 /* libPods-test.a */,
 				EE4E52656122470E924229CD /* libPods-ios_test.a */,
 				3EBF0EB14B2B4B8EADBF31FE /* libPods-mac_test.a */,
@@ -704,6 +759,7 @@
 		F8ED9F061448BDF900DCBB3F /* ObjectiveCSlim */ = {
 			isa = PBXGroup;
 			children = (
+				8CB8AAFD1C6CA5A600FF823F /* ObjectiveCSlim-Bridging-Header.h */,
 				F81E7F7C1582B0F1004C029E /* Adder.h */,
 				F81E7F7D1582B0F1004C029E /* Adder.m */,
 				F8ED9F071448BDF900DCBB3F /* Supporting Files */,
@@ -809,6 +865,7 @@
 				F8ED9F221448BE3200DCBB3F /* Sources */,
 				F8ED9F251448BE3200DCBB3F /* Frameworks */,
 				F8ED9F271448BE3200DCBB3F /* Resources */,
+				8CB8AB081C6CB4C300FF823F /* Copy Swift Libraries */,
 				07B7CB4515A0D50600B2898C /* ShellScript */,
 			);
 			buildRules = (
@@ -1156,6 +1213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CB8AB331C6CC95F00FF823F /* ValidReturnTypes.swift in Sources */,
 				F873F3D61448BF4F00FFCA02 /* Main.c in Sources */,
 				F81ADACB1449CA8600BC821A /* ObjAdderFixture.m in Sources */,
 				F8543DA714671E11001FC9E6 /* Count.m in Sources */,
@@ -1298,7 +1356,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "MacSK/iOSSpecs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1332,7 +1390,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "MacSK/iOSSpecs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1398,7 +1456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "MacSK/MacSpecs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1428,7 +1486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "MacSK/MacSpecs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -1448,6 +1506,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1468,6 +1527,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1516,7 +1576,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimMac-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim/ObjectiveCSlim-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = AcceptanceTests;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1533,7 +1595,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimMac-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim/ObjectiveCSlim-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = AcceptanceTests;
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
