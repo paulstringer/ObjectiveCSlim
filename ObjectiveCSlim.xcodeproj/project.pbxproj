@@ -1494,7 +1494,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1503,10 +1502,11 @@
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimIOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
+				VALID_ARCHS = "${NATIVE_ARCH_ACTUAL}";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1515,7 +1515,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1524,10 +1523,11 @@
 				GCC_PREFIX_HEADER = "ObjectiveCSlim/ObjectiveCSlimIOS-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveCSlim-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = iOSAcceptanceTests;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCSlim-Bridging-Header.h";
+				VALID_ARCHS = "${NATIVE_ARCH_ACTUAL}";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1535,7 +1535,7 @@
 		F8ED9F181448BDF900DCBB3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -1553,7 +1553,7 @@
 		F8ED9F191448BDF900DCBB3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
